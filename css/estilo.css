@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    width: auto;
+}
+body, html {
+    overflow-x: hidden !important;
+    }
+
+    h1{
+        font-size: 30pt;
+    }
+
+.container{
+    padding: 15px;
+    max-width: 700px;
+    margin: 20px auto;
+    padding-top: 10px;
+    padding-left: 29px;
+    padding-right: 29px;
+}
+.gallery-wrapper{
+    overflow-x: auto;
+    border: 3px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 10px;
+}
+.gallery-wrapper::-webkit-scrollbar {
+    height: 40px;
+    background:#F4F4F4;
+}
+
+.gallery-wrapper::-webkit-scrollbar-track {
+    background-color: #afeeee;
+}
+.gallery-wrapper::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+.item{
+    width: 150px;
+    height: 200px;
+   
+}
+
+.current-item{
+    opacity: 10;
+}
+
+figcaption{
+    text-align: center;
+    font-family: arial;
+    margin-left: 4px;
+}
+
+.gallery1{
+    height: 300px;
+}
+
+#menu{
+    margin-top: 238px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: fixed;
+    font-size: 16pt;
+    border: none;
+    top: 0;
+    padding-left: 0;
+}
+menu{
+    padding-left: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#header{
+    text-align: center;
+
+    width: 100%;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    bottom: 0;
+    float: inline-end;
+    text-align: center;
+}
+
+footer>img{
+    display: flex;
+    text-align: center;
+    border: none;
+}
+
+.fim{
+    display: inline-block;
+    padding: 20px;
+}
+
+figure{
+    border: 5px solid;
+    border-radius: 10px;
+   
+}
+#fim{
+    border: none;
+}
+
+#burgue{
+    display: none;
+}
+h2{
+    padding-left: 20px;
+}
+
+
+#itenss{
+    border: none;
+}
+
+
+
+
+
+#header{
+    background-color:#3ea4c4;
+}
+body{
+    background-color: #a6dced;
+}
+#menu{
+    background-color:#3ea4c4 ;
+}
+.gallery-wrapper{
+    background-color:#afeeee ;
+}
+
+
+
+
+
+@media (max-width: 960px) {
+    .container{
+        margin-left: 20%;
+        margin-right: 5%;
+        padding: 15px;
+        max-width: auto;
+        padding-top: 10px;
+        padding-left: 29px;
+        padding-right: 29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gallery-wrapper{
+        max-width: auto;
+        left: 0;
+        float: left;
+        overflow-x: auto;
+    }
+    .gallery{
+        max-width: auto;
+        display: flex;
+        flex-flow: row ;
+        gap: 20px;
+        padding: 10px;
+    }
+    #menu{
+        right: 0;
+        width: 60px;
+        
+    }
+    #burgue{
+        position:relative;
+        right: 0;
+        display: inline-block;
+        text-align: left;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        
+    }
+    #itenss{
+        padding: 0;
+        display: none;
+        background-color: none;
+        padding-top: 15px;
+        font-size: 10pt;
+        background-color: black;
+        border: none;
+        right: 0;
+        padding-right: 40px;
+        padding-left: 2px;
+    }
+    .gallery-wrapper{
+        border: 3px solid black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        max-width: 300px;
+    }
+    footer{
+        float:left;
+        width: 100%;
+        bottom: 0;
+        background-color: black;
+        box-sizing: border-box;
+        
+        height: 302px;
+    }  
+}
+
+
+@media (max-width: 510px) {
+    .container{
+        padding: 15px;
+        max-width: auto;
+        padding-top: 10px;
+        padding-left: 29px;
+        padding-right: 29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gallery-wrapper{
+        max-width: auto;
+        left: 0;
+        float: left;
+        overflow-x: auto;
+    }
+    .gallery{
+        max-width: auto;
+        display: flex;
+        flex-flow: row ;
+        gap: 20px;
+        padding: 10px;
+    }
+    #menu{
+        right: 0;
+        width: 60px;
+        
+    }
+    #burgue{
+        position:relative;
+        right: 0;
+        display: inline-block;
+        text-align: left;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        
+    }
+    #itenss{
+        padding: 0;
+        display: none;
+        background-color: none;
+        padding-top: 15px;
+        font-size: 10pt;
+        background-color: black;
+        border: none;
+        right: 0;
+        padding-right: 40px;
+        padding-left: 2px;
+    }
+    .gallery-wrapper{
+        border: 3px solid black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        max-width: 300px;
+    }
+    footer{
+        float:left;
+        width: 100%;
+        bottom: 0;
+        background-color: black;
+        box-sizing: border-box;
+        
+        height: 302px;
+    }  
+}
+
+
+
+  
+
